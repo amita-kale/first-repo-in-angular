@@ -12,15 +12,16 @@ Name:
 <input [type]="type" [value]="name">
 <br />
 <br />
-
+ // change  text color of  name ...following way are there  
+ //way 1 
 <div [ngClass]="type === 'text' ? 'red-color' : 'pink-color'">
   Pranita
 </div> -->
-
+<!-- way2 -->
 <!-- <div class="{{type === 'text' ? 'red-color' : 'pink-color'}}">
   Pranita
 </div> -->
-
+<!-- way3 -->
 <!-- <div *ngIf="type=== 'text'" class="red-color">
   Pranita
 </div>
@@ -42,3 +43,4 @@ Name:
 </div> -->
 
 <!-- {{currentDate | date: 'MM/dd/YYYY'}} -->
+<tables-root></tables-root>
