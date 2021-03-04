@@ -1,0 +1,37 @@
+<img src="assets/img/logo.png">
+<div class="div">
+  {{title1|uppercase}}
+</div>
+
+Name:
+<input (input)="onInput($event)" [type]="type" value="{{placeholder}}"><br>
+<br>
+<button (click)=buttonClicked()>Submit</button><br><br>
+{{count}}
+<button (click)=incrementValue()>incrementValue</button>
+<div (mousemove)="incrementValue()" style="background-color: rgb(35, 44, 44); height: 50px; width: 50px;">
+</div>
+
+<select (change)=changeColor($event.target.value)>
+  <option>red</option>
+  <option>white</option>
+  <option>blue</option>
+</select>
+<h4>selected color:{{color}}</h4>
+
+
+<table border="2">
+  <tr>
+    <th>Roll_no</th>
+    <th>Name</th>
+    <th>Subject</th>
+    <th>marks</th>
+  </tr>
+  <tr *ngFor="let item of tables">
+    <td>{{item.rollNo}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.subject}}</td>
+    <td>{{item.marks}}</td>
+
+  </tr>
+</table>
