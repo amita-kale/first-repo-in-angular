@@ -16,22 +16,22 @@ export class TablesComponent {
 
   tables = [
     {
-      rollNo: 1,
-      name: 'Amita Kale',
-      subject: 'Marathi',
-      marks: 89,
+      sr_no: 1,
+      FName: 'Amita',
+      LName: 'Kale',
+
     },
     {
-      rollNo: 2,
-      name: 'Aniket Kale',
-      subject: 'Marathi',
-      marks: 89,
+      sr_no: 2,
+      FName: 'Aniket',
+      LName: 'Kalee',
+
     },
     {
-      rollNo: 3,
-      name: 'Ashvini Kale',
-      subject: 'Marathi',
-      marks: 89,
+      sr_no: 3,
+      FName: 'Ashvini ',
+      LName: 'Kaleee',
+
     },
   ];
 

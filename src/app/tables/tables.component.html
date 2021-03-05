@@ -1,4 +1,4 @@
-<img src="assets/img/logo.png">
+<!-- <img src="assets/img/logo.png">
 <div class="div">
   {{title1|uppercase}}
 </div>
@@ -23,20 +23,17 @@ Name:
   <option>blue</option>
 </select>
 <h4>selected color:{{color}}</h4>
-
+ -->
 
 <table border="2">
   <tr>
-    <th>Roll_no</th>
-    <th>Name</th>
-    <th>Subject</th>
-    <th>marks</th>
+    <th>sr_no</th>
+    <th>FName</th>
+    <th>LName</th>
   </tr>
   <tr *ngFor="let item of tables">
-    <td>{{item.rollNo}}</td>
-    <td>{{item.name}}</td>
-    <td>{{item.subject}}</td>
-    <td>{{item.marks}}</td>
-
+    <td>{{item.sr_no}}</td>
+    <td>{{item.FName}}</td>
+    <td>{{item.LName}}</td>
   </tr>
 </table>
