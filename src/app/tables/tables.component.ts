@@ -12,21 +12,7 @@ export class TablesComponent {
   placeholder = "amita kale"
   count = 0;
 
-  buttonClicked() {
-    console.log("submit pressed");
-  }
-  incrementValue() {
-    this.count++;
-  }
 
-  onInput(e) {
-    console.log(e.target.value);
-    this.title1 = e.target.value;//this is for changing title1 as per input text
-  }
-  color = '';
-  changeColor(color) {
-    this.color = color;
-  }
 
   tables = [
     {
@@ -48,4 +34,26 @@ export class TablesComponent {
       marks: 89,
     },
   ];
+
+
+  buttonClicked() {
+    console.log("submit pressed");
+
+  }
+  myEvent(evt) {
+    console.log(evt);
+  }
+  incrementValue() {
+    this.count++;
+  }
+
+  onInput(e) {
+    console.log(e.target.value);
+    this.title1 = e.target.value;//this is for changing title1 as per input text
+  }
+  color = '';
+  changeColor(color) {
+    this.color = color;
+  }
+
 }

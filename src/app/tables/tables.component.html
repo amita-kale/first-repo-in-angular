@@ -4,9 +4,14 @@
 </div>
 
 Name:
-<input (input)="onInput($event)" [type]="type" value="{{placeholder}}"><br>
+<input (keyup)="onInput($event)" [type]="type" value="{{placeholder}}"><br>
 <br>
 <button (click)=buttonClicked()>Submit</button><br><br>
+<div (mouseleave)="myEvent('mouseEvent')" style="background-color: bisque;">Hello
+
+</div>
+<br>
+<br>
 {{count}}
 <button (click)=incrementValue()>incrementValue</button>
 <div (mousemove)="incrementValue()" style="background-color: rgb(35, 44, 44); height: 50px; width: 50px;">
