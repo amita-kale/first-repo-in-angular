@@ -12,7 +12,8 @@ export class TablesComponent {
   placeholder = "amita kale"
   count = 0;
 
-
+  Tabletitle = "Table";
+  Formtitle = "Form";
 
   tables = [
     {
