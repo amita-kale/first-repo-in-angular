@@ -1,10 +1,10 @@
-<!-- <img src="assets/img/logo.png">
+<img src="assets/img/logo.png">
 <div class="div">
   {{title1|uppercase}}
 </div>
-
+<!-- 
 Name:
-<input (keyup)="onInput($event)" [type]="type" value="{{placeholder}}"><br>
+<input (input)="onInput($event)" [type]="type" value="{{placeholder}}"><br>
 <br>
 <button (click)=buttonClicked()>Submit</button><br><br>
 <div (mouseleave)="myEvent('mouseEvent')" style="background-color: bisque;">Hello
@@ -17,17 +17,17 @@ Name:
 <div (mousemove)="incrementValue()" style="background-color: rgb(35, 44, 44); height: 50px; width: 50px;">
 </div>
 
-<select (change)=changeColor($event.target.value)>
+<!-- <select (change)=changeColor($event.target.value)>
   <option>red</option>
   <option>white</option>
   <option>blue</option>
 </select>
 <h4>selected color:{{color}}</h4>
- -->
+
 {{Tabletitle|uppercase}}
 <br>
 <br>
-<br>
+<br> -->
 <table border="2">
   <tr>
     <th>sr_no</th>
@@ -45,8 +45,8 @@ Name:
 {{Formtitle|uppercase}}<br>
 <br>
 
-FName<input type="text" value=""><br>
+FName<input #fid type="text" value=""><br>
 <br>
-LName<input type="text" value=""><br>
+LName<input #lid type="text" value=""><br>
 <br>
-<button id=button>Submit</button>
+<button (click)="buttonClicked(fid, lid)">Submit</button>

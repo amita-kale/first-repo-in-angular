@@ -20,29 +20,49 @@ export class TablesComponent {
       sr_no: 1,
       FName: 'Amita',
       LName: 'Kale',
-
     },
     {
       sr_no: 2,
       FName: 'Aniket',
       LName: 'Kalee',
-
     },
     {
       sr_no: 3,
       FName: 'Ashvini ',
       LName: 'Kaleee',
-
     },
   ];
 
+  // public FName: string;
+  // public LName: string;
 
-  buttonClicked() {
-    console.log("submit pressed");
+  // public rows: Array<{ FName: string, LName: string }> = [];
+
+  // buttonClicked() {
+  //   this.rows.push({
+  //     FName: this.FName,
+  //     LName: this.LName
+  //   });
+
+  //   //if you want to clear input
+  //   this.FName = null;
+  //   this.LName = null;
+
+  // }
+
+  buttonClicked(Ftext, Ltext) {
+    // console.log(Ftext.value + " " + Ltext.value);
+    const obj = {
+      sr_no: this.tables.length + 1,
+      FName: Ftext.value,
+      LName: Ltext.value,
+    };
+    this.tables.push(obj);
+
 
   }
   myEvent(evt) {
-    console.log(evt);
+    console.log(evt.target.value);
   }
   incrementValue() {
     this.count++;
