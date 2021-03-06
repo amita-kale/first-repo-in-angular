@@ -12,8 +12,57 @@ export class TablesComponent {
   placeholder = "amita kale"
   count = 0;
 
-  buttonClicked() {
-    console.log("submit pressed");
+  Tabletitle = "Table";
+  Formtitle = "Form";
+
+  tables = [
+    {
+      sr_no: 1,
+      FName: 'Amita',
+      LName: 'Kale',
+    },
+    {
+      sr_no: 2,
+      FName: 'Aniket',
+      LName: 'Kalee',
+    },
+    {
+      sr_no: 3,
+      FName: 'Ashvini ',
+      LName: 'Kaleee',
+    },
+  ];
+
+  // public FName: string;
+  // public LName: string;
+
+  // public rows: Array<{ FName: string, LName: string }> = [];
+
+  // buttonClicked() {
+  //   this.rows.push({
+  //     FName: this.FName,
+  //     LName: this.LName
+  //   });
+
+  //   //if you want to clear input
+  //   this.FName = null;
+  //   this.LName = null;
+
+  // }
+
+  buttonClicked(Ftext, Ltext) {
+    // console.log(Ftext.value + " " + Ltext.value);
+    const obj = {
+      sr_no: this.tables.length + 1,
+      FName: Ftext.value,
+      LName: Ltext.value,
+    };
+    this.tables.push(obj);
+
+
+  }
+  myEvent(evt) {
+    console.log(evt.target.value);
   }
   incrementValue() {
     this.count++;
@@ -28,24 +77,4 @@ export class TablesComponent {
     this.color = color;
   }
 
-  tables = [
-    {
-      rollNo: 1,
-      name: 'Amita Kale',
-      subject: 'Marathi',
-      marks: 89,
-    },
-    {
-      rollNo: 2,
-      name: 'Aniket Kale',
-      subject: 'Marathi',
-      marks: 89,
-    },
-    {
-      rollNo: 3,
-      name: 'Ashvini Kale',
-      subject: 'Marathi',
-      marks: 89,
-    },
-  ];
 }
